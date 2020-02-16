@@ -1,7 +1,11 @@
 import React from "react";
 
 const Hello = () => {
-  return <div id="hello">Hello World</div>;
+  return (
+    <div className="ui main container">
+      <div id="hello">Hello World</div>
+    </div>
+  );
 };
 
 export default Hello;
