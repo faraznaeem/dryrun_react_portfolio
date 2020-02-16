@@ -6,7 +6,7 @@ describe("User can see list of projects", () => {
 
   it("displays first project", () => {
     cy.get("#project-1").within(() => {
-      cy.get(".image").should("exist");
+      cy.get((".image")).should("exist");
       cy.get(".ui.header").should("contain", "My First Website");
       cy.get(".description").should(
         "contain",
@@ -17,7 +17,7 @@ describe("User can see list of projects", () => {
 
   it("displays second project", () => {
     cy.get("#project-2").within(() => {
-      cy.get(".image").should("exist");
+      cy.get((".image")).should("exist");
       cy.get(".ui.header").should("contain", "UI Design");
       cy.get(".description").should(
         "contain",
@@ -28,7 +28,7 @@ describe("User can see list of projects", () => {
 
   it("displays third project", () => {
     cy.get("#project-3").within(() => {
-      cy.get(".image").should("exist");
+      cy.get((".image")).should("exist");
       cy.get(".ui.header").should("contain", "Mobile UX");
       cy.get(".description").should(
         "contain",
